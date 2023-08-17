@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="welcome-screen">
+        <h2>Hey Fiona, zur Feier des Tages habe ich eine kleine Überraschung für dich vorbereitet. Hoffe, du hast Spaß daran.</h2>
+        <button onclick="startGame()">Start Game</button>
+    </div>
+
+    <div class="game-container">
+        <h1>Answer the Questions</h1>
+        <p id="question"></p>
+        <input type="text" id="answer" placeholder="Your answer...">
+        <button onclick="submitAnswer()">Submit</button>
+        <p id="progress">Letters earned: </p>
+    </div>
+
+    <div class="end-screen">
+        I love you
+        <button onclick="showHeartfeltMessage()">Weiter</button>
+    </div>
+
+    <div class="message-screen">
+        <p id="heartfeltMessage"></p>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
